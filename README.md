@@ -18,7 +18,7 @@
 This is a Spring Boot application that includes a login functionality and a frontend built with React. The project demonstrates a full-stack application.
 ## Features
 - User registration and login
-- JWT-based authentication
+
 - Role-based access control
 - RESTful API backend
 - Responsive React frontend
