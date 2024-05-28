@@ -24,9 +24,9 @@ const Register = ()=>{
   
       setValidated(true);
       axios.post('http://localhost:7800/auth/register', {
-        email: 'Fred@gmail.com',
-        name: 'Flintstone',
-        contactNo: '0776754356'
+        email: '',
+        name: '',
+        contactNo: ''
       })
       .then(function (response) {
         console.log(response);
@@ -50,10 +50,33 @@ const Register = ()=>{
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
+
+        <Form.Group as={Col} md="4" controlId="validationCustom02">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            required
+            type="email"
+            placeholder="email"
+            defaultValue="Otto"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
+
+
+        <Form.Group as={Col} md="4" controlId="validationCustom03">
+          <Form.Label>Contact no</Form.Label>
+          <Form.Control
+            required
+            type="tel"
+            placeholder="phone"
+            defaultValue="Otto"
+          />
+          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+        </Form.Group>
        
       </Row>
       
-      <Button onClick={handleSubmit} type="submit">Submit form</Button>
+      <Button onClick={handleSubmit} >Submit form</Button>
     </Form>
        
       )

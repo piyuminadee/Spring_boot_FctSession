@@ -3,6 +3,7 @@ package com.demo2.fctsession.controller;
 import com.demo2.fctsession.model.LoginRequest;
 import com.demo2.fctsession.model.RegisterRequest;
 import com.demo2.fctsession.service.AuthenticationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/auth")
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin("*")
 public class AuthenticationController {
 
+    @Autowired
     private AuthenticationService authenticationService;
 
     public AuthenticationController(AuthenticationService authenticationService) {

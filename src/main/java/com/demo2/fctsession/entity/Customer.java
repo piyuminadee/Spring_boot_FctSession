@@ -29,6 +29,12 @@ public class Customer {
         this.contactNo = contactNo;
     }
 
+    public Customer(String name, String email, String contactNo) {
+        this.name = name;
+        this.email = email;
+        this.contactNo = contactNo;
+    }
+
     public long getId() {
         return id;
     }
